@@ -44,6 +44,7 @@ vim.o.autoread = true -- Auto reload files changed outside vim
 vim.o.autowrite = false -- Don't auto save
 
 -- Visual settings
+vim.o.background = 'dark' -- or "light" for light mode
 vim.o.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative line numbers
 vim.o.cursorline = true -- Show which line your cursor is on

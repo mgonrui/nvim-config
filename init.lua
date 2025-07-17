@@ -37,7 +37,8 @@ require('lazy').setup({
   require 'plugins.which-key', -- Useful plugin to show you pending keybinds.
   require 'plugins.mini', -- Collection of various small independent plugins/modules
   require 'plugins.treesitter', -- Highlight, edit, and navigate code
-  require 'plugins.themes.everforest', -- theme
+  require 'plugins.colorschemes.everforest', -- theme
+  require 'plugins.colorschemes.gruvbox', -- theme
   require 'plugins.lazydev', -- configures Lua LSP for your Neovim config, runtime and plugins
   require 'plugins.nvim-lspconfig', -- Main LSP Configuration
   require 'plugins.indent_line',
@@ -49,3 +50,5 @@ require('lazy').setup({
     icons = {},
   },
 })
+
+vim.cmd 'colorscheme everforest' -- Colorscheme (If it's a plugin it needs to be loaded after them)

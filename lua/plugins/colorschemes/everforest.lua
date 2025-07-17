@@ -12,6 +12,5 @@ return {
         comments = { italic = false }, -- Disable italics in comments
       },
     }
-    vim.cmd.colorscheme 'everforest'
   end,
 }

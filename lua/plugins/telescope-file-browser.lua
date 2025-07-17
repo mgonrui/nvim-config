@@ -15,10 +15,10 @@ return {
 
           -- Display & Filtering
           grouped = false, -- Don't group directories first
-          hidden = false, -- Show hidden files (set to true to hide)
+          hidden = true, -- Show hidden files (set to true to hide)
           respect_gitignore = vim.fn.executable 'fd' == 1, -- Use fd if available
-          no_ignore = false, -- Don't force show gitignored files
-          follow_symlinks = false, -- Don't follow symlinks
+          no_ignore = true, -- Don't force show gitignored files
+          follow_symlinks = true, -- Follow symlinks
           hide_parent_dir = true, -- Hide ".." parent directory
           collapse_dirs = false, -- Don't collapse empty directories
 
