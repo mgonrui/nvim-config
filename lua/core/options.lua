@@ -53,7 +53,7 @@ vim.wo.wrap = false -- Disables line wrapping for the current window
 vim.o.signcolumn = 'yes' -- Keep signcolumn on by default
 vim.o.list = true -- Show invisible characters
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' } -- Sets how neovim will display certain whitespace characters in the editor
-vim.o.termguicolors = true -- Enable 24-bit colors
+-- vim.o.termguicolors = true -- Enable 24-bit colors
 vim.o.signcolumn = 'yes' -- Always show sign column
 vim.o.colorcolumn = '80' -- Show color column at 80 characters
 vim.o.showmatch = true -- Highlight matching brackets
@@ -68,3 +68,4 @@ vim.o.conceallevel = 0 -- Don't hide markup
 vim.o.concealcursor = '' -- Don't hide cursor line markup
 vim.o.lazyredraw = true -- Don't redraw during macros
 vim.o.synmaxcol = 300 -- Syntax highlighting limit
+vim.highlight.priorities.semantic_tokens = 95 -- Dont let LSP override treesitter color settings

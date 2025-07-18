@@ -1,4 +1,5 @@
 return {
+
   'nvim-treesitter/nvim-treesitter', -- Highlight, edit, and navigate code
   build = ':TSUpdate',
   main = 'nvim-treesitter.configs', -- Sets main module to use for opts
@@ -17,7 +18,7 @@ return {
       vim.api.nvim_set_hl(0, '@operator.c', { link = '@variable', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@variable.parameter.c', { link = '@variable.member', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@variable.declaration.c', { link = '@variable.member', italic = false, underline = false, sp = '' }),
-      vim.api.nvim_set_hl(0, '@punctuation.delimiter.c', { link = '@variable', italic = false, underline = false, sp = '' }),
+      -- vim.api.nvim_set_hl(0, '@punctuation.delimiter.c', { link = '@variable', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@property.c', { link = '@variable', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@number.c', { link = '@variable', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@constant.c', { link = '@constant.builtin', italic = false, underline = false, sp = '' }),
@@ -29,5 +30,5 @@ return {
   --
   --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
   --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
-  --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+  -- --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 }

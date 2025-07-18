@@ -25,6 +25,7 @@ rtp:prepend(lazypath)
 
 -- Configure and install plugins
 require('lazy').setup({
+  require 'plugins.treesitter', -- Highlight, edit, and navigate code
   require 'plugins.guess-indent', -- Detect tabstop and shiftwidth automatically
   require 'plugins.gitsigns', -- Adds git related signs to the gutter, as well as utilities for managing changes
   require 'plugins.rainbow-delimiters', -- Rainbow delimiters
@@ -36,19 +37,19 @@ require('lazy').setup({
   require 'plugins.todo-comments', -- Highlight todo, notes, etc in comments
   require 'plugins.which-key', -- Useful plugin to show you pending keybinds.
   require 'plugins.mini', -- Collection of various small independent plugins/modules
-  require 'plugins.treesitter', -- Highlight, edit, and navigate code
-  require 'plugins.colorschemes.everforest', -- theme
-  require 'plugins.colorschemes.gruvbox', -- theme
   require 'plugins.lazydev', -- configures Lua LSP for your Neovim config, runtime and plugins
   require 'plugins.nvim-lspconfig', -- Main LSP Configuration
   require 'plugins.indent_line',
   require 'plugins.autopairs',
   -- require 'plugins.nvim-dap',
   -- require 'plugins.lint',
+  -- themes
+  require 'plugins.colorschemes.everforest',
 }, {
+
   ui = {
     icons = {},
   },
 })
 
-vim.cmd 'colorscheme everforest' -- Colorscheme (If it's a plugin it needs to be loaded after them)
+vim.cmd.colorscheme 'everforest' -- Load colorscheme (If it's a plugin it needs to be loaded after them)
