@@ -14,7 +14,7 @@ return {
           cwd_to_path = false, -- Don't force cwd as initial path
 
           -- Display & Filtering
-          grouped = false, -- Don't group directories first
+          grouped = true, -- Don't group directories first
           hidden = true, -- Show hidden files (set to true to hide)
           respect_gitignore = vim.fn.executable 'fd' == 1, -- Use fd if available
           no_ignore = true, -- Don't force show gitignored files

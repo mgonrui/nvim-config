@@ -17,7 +17,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     error('Error cloning lazy.nvim:\n' .. out)
   end
 end
-
+-- this is a ripgrep test
 -- Add lazy.nvim to Neovim's runtime path
 ---@type vim.Option
 local rtp = vim.opt.rtp
@@ -29,7 +29,7 @@ require('lazy').setup({
   require 'plugins.guess-indent', -- Detect tabstop and shiftwidth automatically
   require 'plugins.gitsigns', -- Adds git related signs to the gutter, as well as utilities for managing changes
   require 'plugins.rainbow-delimiters', -- Rainbow delimiters
-  require 'plugins.telescope', -- Fuzzy Finder (files, lsp, etc)
+  -- require 'plugins.telescope', -- Fuzzy Finder (files, lsp, etc)
   require 'plugins.telescope-file-browser', -- Fuzzy Finder (files, lsp, etc)
   require 'plugins.arrow', -- Switch fast between bookmarked files
   require 'plugins.conform', -- Autoformat
@@ -39,8 +39,9 @@ require('lazy').setup({
   require 'plugins.mini', -- Collection of various small independent plugins/modules
   require 'plugins.lazydev', -- configures Lua LSP for your Neovim config, runtime and plugins
   require 'plugins.nvim-lspconfig', -- Main LSP Configuration
-  require 'plugins.indent_line',
+  -- require 'plugins.indent-blankline',
   require 'plugins.autopairs',
+  require 'plugins.snacks',
   -- require 'plugins.nvim-dap',
   -- require 'plugins.lint',
   -- themes

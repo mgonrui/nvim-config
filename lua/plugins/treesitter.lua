@@ -4,8 +4,9 @@ return {
   build = ':TSUpdate',
   main = 'nvim-treesitter.configs', -- Sets main module to use for opts
   -- [[ Configure Treesitter ]]
+  --
   opts = {
-    ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+    -- ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
     auto_install = true, -- Autoinstall languages that are not installed
     highlight = {
       enable = true,
@@ -22,9 +23,10 @@ return {
       vim.api.nvim_set_hl(0, '@property.c', { link = '@variable', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@number.c', { link = '@variable', italic = false, underline = false, sp = '' }),
       vim.api.nvim_set_hl(0, '@constant.c', { link = '@constant.builtin', italic = false, underline = false, sp = '' }),
+      vim.api.nvim_set_hl(0, '@ibl.scope.underline.1', { link = '@variable', italic = false, underline = false, sp = '' }),
     },
-    indent = { enable = true, disable = { 'ruby' } },
-  },
+     -- indent = { enable = true, disable = { 'ruby' } },
+   },
   -- There are additional nvim-treesitter modules that you can use to interact
   -- with nvim-treesitter. You should go explore a few and see what interests you:
   --

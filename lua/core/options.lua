@@ -52,7 +52,7 @@ vim.o.inccommand = 'split' -- Preview substitutions as you type
 vim.wo.wrap = false -- Disables line wrapping for the current window
 vim.o.signcolumn = 'yes' -- Keep signcolumn on by default
 vim.o.list = true -- Show invisible characters
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' } -- Sets how neovim will display certain whitespace characters in the editor
+vim.opt.listchars = { tab = '  ', trail = ' ', nbsp = ' ' } -- Sets how neovim will display certain whitespace characters in the editor
 -- vim.o.termguicolors = true -- Enable 24-bit colors
 vim.o.signcolumn = 'yes' -- Always show sign column
 vim.o.colorcolumn = '80' -- Show color column at 80 characters
