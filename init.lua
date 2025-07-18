@@ -39,8 +39,8 @@ require('lazy').setup({
   require 'plugins.mini', -- Collection of various small independent plugins/modules
   require 'plugins.lazydev', -- configures Lua LSP for your Neovim config, runtime and plugins
   require 'plugins.nvim-lspconfig', -- Main LSP Configuration
-  -- require 'plugins.indent-blankline',
-  require 'plugins.autopairs',
+  -- require 'plugins.indent-blankline', -- Add indentation guides even on blank lines
+  require 'plugins.autopairs', -- Autopairs for neovim
   require 'plugins.snacks',
   -- require 'plugins.nvim-dap',
   -- require 'plugins.lint',

@@ -1,6 +1,6 @@
 return {
   {
-    'folke/snacks.nvim',
+    'folke/snacks.nvim', -- A collection of small QoL plugins
     priority = 1000,
     lazy = false,
     keys = {

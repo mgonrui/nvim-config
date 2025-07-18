@@ -8,4 +8,4 @@
 
 (declaration
   declarator: (pointer_declarator
-    declarator: (identifier) @variable.declaration))
+    declarator: (_) @variable.declaration))
